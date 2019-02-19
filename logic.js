@@ -53,8 +53,7 @@ function createFeatures(earthquakeData) {
 function createMap(earthquakes) {
 
   // Define streetmap and darkmap layers
-  var streetmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" +
-    "access_token=pk.eyJ1IjoibGl6ZXkxMSIsImEiOiJjanMybWxlcXUyNmd6NDNwZHJteXUxZ3h3In0.fSVL6mYSyWXMlrG2_zE2-Q);
+  var streetmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token={pk.eyJ1IjoibGl6ZXkxMSIsImEiOiJjanMybWxlcXUyNmd6NDNwZHJteXUxZ3h3In0.fSVL6mYSyWXMlrG2_zE2-Q}");
 
   // Define a baseMaps object to hold our base layers
   var baseMaps = {
